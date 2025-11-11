@@ -23,7 +23,7 @@ stages:
           - task: DownloadSecureFile@1
             name: download_ssh_key
             inputs:
-              secureFile: "azure_vm_key.pub"
+              secureFile: "azure_vm_key"
 
           - script: |
               mkdir -p ~/.ssh
